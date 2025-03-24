@@ -11,7 +11,8 @@ Briefly introduce it.
 
 - On the xoy plane, the center of a circle is at $(R2, 0, 0)$, its radius is $R1$, 
 so any point on it is:
-\begin{equation}(x,y,z)=(R_2,0,0)+(R_1\cos\theta,R_1\sin\theta,0)\end{equation}
+$$
+(x,y,z)=(R_2,0,0)+(R_1\cos\theta,R_1\sin\theta,0)\end{equation}
 
 - Make it rotate around y-axis
 \begin{equation}\begin{gathered}
@@ -27,12 +28,14 @@ R_2+R_1\cos\theta, & R_1\sin\theta, & 0
 \begin{pmatrix}
 (R_2+R_1\cos\theta)\cos\phi, & R_1\sin\theta, & -(R_2+R_1\cos\theta)\sin\phi
 \end{pmatrix}
-\end{gathered}\end{equation}
+\end{gathered}
+$$
 
 So we have each point on the donut in 3D space.
 
 - Rotate the object we just got:
-\begin{equation}\begin{aligned}&\begin{pmatrix} 
+$$
+\begin{aligned}&\begin{pmatrix} 
 R_2+R_1\cos\theta, & R_1\sin\theta, & 0
 \end{pmatrix}\cdot
 \begin{pmatrix}
@@ -50,7 +53,8 @@ R_2+R_1\cos\theta, & R_1\sin\theta, & 0
 -\sin B & \cos B & 0 \\
 0 & 0 & 1
 \end{pmatrix}
-\end{aligned}\end{equation}
+\end{aligned}
+$$
 
 This is the each point when the donut is at each state$(\theta, \phi, A, B)$.
 
